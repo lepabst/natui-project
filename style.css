@@ -1,0 +1,372 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/roboto-v30-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('./fonts/roboto-v30-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+            url('./fonts/roboto-v30-latin-300.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/roboto-v30-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/roboto-v30-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('./fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('./fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/roboto-v30-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('./fonts/roboto-v30-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+            url('./fonts/roboto-v30-latin-700.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/roboto-v30-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/roboto-v30-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/roboto-v30-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('./fonts/roboto-v30-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/roboto-v30-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+            url('./fonts/roboto-v30-latin-900.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/roboto-v30-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/roboto-v30-latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#target {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    z-index: 3000;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container.no-details {
+    grid-template-columns: 1fr;
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    height: 100vh;
+}
+
+ul#participants {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+ul#participants li {
+    display: flex;
+    align-items: center;
+}
+
+ul#participants li img {
+    border-radius: 100%;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.title {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 16px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.title h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.title h2 {
+    font-weight: bolder;
+    margin: 8px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #04162c;
+    margin: 8px 0;
+}
+
+#video-presentation-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #04162c;
+    align-items: center;
+}
+
+#input-video {
+    display: none;
+}
+
+#video-row {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#meeting-tools {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    flex: 0 1 160px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#presentation {
+    background-color: #fff;
+}
+
+#current-color {
+    width: 78px;
+    height: 78px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+#color-picker {
+    visibility: hidden;
+}
+
+#tools-left, #tools-right {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 45%;
+    max-width: 45%;
+    height: 100%;
+}
+
+#tools-right .tool {
+    color: grey;
+}
+
+#tools-right > .tool.active {
+    color: #fff;
+}
+
+#left-handed img {
+    transform: scaleX(-1);
+}
+
+.tool {
+    display: flex;
+    width: 78px;
+    height: 78px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    border: 2px solid transparent;
+    position: relative;
+    margin-top: -30px;
+    color: #fff;
+}
+
+.tool.active {
+    border-color: #fff;
+}
+
+.tool span {
+    position: absolute;
+    right: auto;
+    bottom: -30px;
+    
+    text-align: center;
+}
+
+.tool.clickable:not(.active):hover {
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+
+#wheel-wrapper {
+    position: absolute;
+    top: 0;
+    backdrop-filter: saturate(10%) blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheel-tool {
+    fill: rgba(3, 3, 3, 0.524) !important; 
+    z-index: 9; 
+    cursor: pointer;
+}
+
+#wheel image {
+    cursor: pointer;
+}
+
+.wheel-tool-active {
+    position: relative;
+    fill: rgba(255, 115, 0, 0.458) !important;
+    z-index: 10;
+}
+
+#presentation-container {
+    position: relative;
+}
+
+#presentation-drawings {
+    position: absolute;
+    top: 0; left: 0;
+    outline: 1px solid #333;
+}
+
+#presentation-drawings {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+#lock-container {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1000ms ease;
+    opacity: 1;
+}
+
+#lock-box {
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lock-bg {
+    position: absolute;
+    background-color: rgba(0,0,0, .8);
+    width: 110%;
+    height: 110%;
+    backdrop-filter: blur(8px);
+}
+
+.lock-center {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    z-index: 10;
+}
+
+.lock-icon {
+    fill: #ffffffd8;
+}
+
+.switch-slide {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 20%;
+    cursor: pointer;
+}
+
+.switch-slide:hover {
+    background: rgb(108,108,108);
+    background: linear-gradient(90deg, rgba(108,108,108,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.switch-slide[data-slide="1"] {
+    right: 0;
+    left: auto;
+}
+
+.switch-slide[data-slide="1"]:hover {
+    background: rgb(108,108,108);
+    background: linear-gradient(270deg, rgba(108,108,108,1) 0%, rgba(0,0,0,0) 100%);
+}
